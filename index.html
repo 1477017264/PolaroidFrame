@@ -1,58 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-		<title>--宝丽来边框生成器--</title>
-		<link rel="shortcut icon" href="./img/favicon.ico">
-		<link rel="stylesheet" href="./css/styles.css">
-	</head>
-	<body ontouchstart>
-		<div id="background"></div>
-		<div class="filmBox">
-			<div class="logo"><img src="img/logo.png" alt="" /></div>
-			<div class="container">
-				<div class="polaroid-frame" id="polaroid">
-					<canvas id="imageCanvas"></canvas>
-					<!-- <img id="overlay" src="" alt=""> -->
-					<img id="box" alt="Overlay Image" src="img/bg.jpg">
-				</div>
-
-				<div class="input-box">
-
-					<label for="uploadFile">
-						<input type="button" id="btn" value="上传图片">
-						<input type="file" id="imageUpload" accept="image/*" class="inputBtn">
-					</label>
-					<!-- <label for="presetSelect">选择边框</label> -->
-					<div class="option">
-						<select id="presetSelect">
-						<option value="" selected="selected">选择边框</option>
-						<option value="img/cover.png">--白边--</option>
-						<option value="img/cover2.png">--金边--</option>
-					</select>
-					</div>
-					
-					<button id="downloadBtn">下载图片</button>
-				</div>
-			</div>
-		</div>
-
-		<script>
-			$('body').delegate('#imageUpload', 'change', function(e) {
-				if ($(this).val() != '') {
-					var fileName = val.substring(val.lastIndexOf('\\') + 1); //不获取全路径，只获取文件名称
-					$("#text").html(fileName);
-				} else {
-					
-				}
-			})
-		</script>
-		<script src="./js/script.js"></script>
-	</body>
-=======
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
@@ -115,5 +62,4 @@
         </script>
         <script src="./js/script.js"></script>
     </body>
->>>>>>> 2df1fa7 (first commit)
 </html>
