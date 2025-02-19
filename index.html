@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<<<<<<< HEAD
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<title>--宝丽来边框生成器--</title>
+		<link rel="shortcut icon" href="./img/favicon.ico">
+		<link rel="stylesheet" href="./css/styles.css">
+	</head>
+	<body ontouchstart>
+		<div id="background"></div>
+		<div class="filmBox">
+			<div class="logo"><img src="img/logo.png" alt="" /></div>
+			<div class="container">
+				<div class="polaroid-frame" id="polaroid">
+					<canvas id="imageCanvas"></canvas>
+					<!-- <img id="overlay" src="" alt=""> -->
+					<img id="box" alt="Overlay Image" src="img/bg.jpg">
+				</div>
+
+				<div class="input-box">
+
+					<label for="uploadFile">
+						<input type="button" id="btn" value="上传图片">
+						<input type="file" id="imageUpload" accept="image/*" class="inputBtn">
+					</label>
+					<!-- <label for="presetSelect">选择边框</label> -->
+					<div class="option">
+						<select id="presetSelect">
+						<option value="" selected="selected">选择边框</option>
+						<option value="img/cover.png">--白边--</option>
+						<option value="img/cover2.png">--金边--</option>
+					</select>
+					</div>
+					
+					<button id="downloadBtn">下载图片</button>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			$('body').delegate('#imageUpload', 'change', function(e) {
+				if ($(this).val() != '') {
+					var fileName = val.substring(val.lastIndexOf('\\') + 1); //不获取全路径，只获取文件名称
+					$("#text").html(fileName);
+				} else {
+					
+				}
+			})
+		</script>
+		<script src="./js/script.js"></script>
+	</body>
+=======
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <title>--宝丽来边框生成器--</title>
+        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body ontouchstart>
+        <div id="background"></div>
+        <div class="filmBox">
+            <!-- <div class="logo"><img src="img/logo.png" alt="" /></div> -->
+            <div class="container">
+                <div class="polaroid-frame" id="polaroid">
+                    <canvas id="imageCanvas"></canvas>
+                    <!-- <img id="overlay" src="" alt=""> -->
+                    <img id="box" alt="Overlay Image" src="img/bg.jpg">
+                </div>
+
+                <div class="input-box">
+
+                    <label for="uploadFile">
+                        <input type="button" id="btn" value="上传图片">
+                        <input type="file" id="imageUpload" accept="image/*" class="inputBtn">
+                    </label>
+                    <!-- <label for="presetSelect">选择边框</label> -->
+                    <div class="option">
+                        <select id="presetSelect">
+                            <option value="" selected="selected">选择边框</option>
+                            <option value="img/cover1.png">--白边--</option>
+                            <option value="img/cover2.png">--金边--</option>
+                            <option value="img/cover3.png">--黑边--</option>
+                            <option value="img/cover4.png">--视网膜1--</option>
+                            <option value="img/cover5.png">--视网膜2--</option>
+                            <option value="img/cover6.png">--巴斯1--</option>
+                            <option value="img/cover7.png">--巴斯2--</option>
+                        </select>
+                    </div>
+
+                    <button id="downloadBtn">下载图片</button>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <a target="_blank"
+                href="https://www.xiaohongshu.com/user/profile/5bf4ddf7b1ead600013fc02d?xsec_token=YBlEP5xr7m-duRYH-Gb50WG89EkqHHNO6K7tkQOpB9-WA=&xsec_source=app_share&xhsshare=CopyLink&appuid=5bf4ddf7b1ead600013fc02d&apptime=1739974814&share_id=01c9d46cfb304a938996ed29a26b459b"><img
+                    src="img/xhs.png" alt="" /><span>@ CapyPola</span></a>
+            <a target="_blank" href="https://github.com/1477017264"><img src="img/github.png" alt="" /><span>©
+                    CapyPola</span></a>
+        </div>
+        <script>
+            $('body').delegate('#imageUpload', 'change', function(e) {
+                if ($(this).val() != '') {
+                    var fileName = val.substring(val.lastIndexOf('\\') + 1); //不获取全路径，只获取文件名称
+                    $("#text").html(fileName);
+                } else {
+
+                }
+            })
+        </script>
+        <script src="./js/script.js"></script>
+    </body>
+>>>>>>> 2df1fa7 (first commit)
+</html>
