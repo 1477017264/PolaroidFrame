@@ -1,18 +1,4 @@
 * {
-<<<<<<< HEAD
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f0f0f0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	overflow: hidden;
-=======
     margin: 0;
     padding: 0;
 }
@@ -24,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     font: normal 100% Arial, sans-serif;
 }
 
@@ -40,22 +26,10 @@ body {
         width: 90%;
         height: 3em;
     }
->>>>>>> 2df1fa7 (first commit)
 }
 
 /* 背景容器 */
 #background {
-<<<<<<< HEAD
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	background-image: url("../img/bg.jpg");
-	transition: opacity 1s ease-in-out;
-	/* 将背景置于最底层 */
-=======
     position: fixed;
     top: 0;
     left: 0;
@@ -65,26 +39,10 @@ body {
     background-image: url("../img/bg.jpg");
     transition: opacity 1s ease-in-out;
     /* 将背景置于最底层 */
->>>>>>> 2df1fa7 (first commit)
 }
 
 /* 高斯模糊效果 */
 #background::before {
-<<<<<<< HEAD
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	/*    background: inherit;
-    filter: blur(20px); */
-	/* 高斯模糊 */
-	z-index: -1;
-}
-
-.logo{
-=======
     content: '';
     position: absolute;
     top: 0;
@@ -98,7 +56,6 @@ body {
 }
 
 /* .logo{
->>>>>>> 2df1fa7 (first commit)
 	display:  flex;
 	width: 15em;
 	padding-top: 4em;
@@ -108,140 +65,6 @@ body {
 .logo img{
 	width: 100%;
 	
-<<<<<<< HEAD
-}
-
-#polaroid {
-	position: relative;
-	width: 22em;
-	height: 27em;
-	background-image: url("../img/cover.png");
-	background-size: cover;
-	margin: 20px auto;
-	border-radius: 2px;
-	/* transform: rotate(3deg); */
-	transition: transform 0.3s ease;
-}
-
-/* #polaroid:hover {
-    transform: rotate(0deg);
-}
-
-
-#polaroid::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 30px;
-    position: relative;
-    top: 10px;
-    left: 0;
-    transform: rotate(-5deg);
-} */
-
-.filmBox {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-content: space-around;
-	justify-content: flex-start;
-	align-items: center;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	backdrop-filter: blur(7px);
-	-webkit-backdrop-filter: blur(7px);
-}
-
-.container {
-	display: flex;
-	text-align: center;
-	padding: 20px;
-	border-radius: 10px;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-content: space-around;
-	justify-content: center;
-	align-items: flex-start;
-	position: absolute;
-	left: 50%;
-	top: 55%;
-	transform: translate(-50%, -50%);
-}
-
-
-
-.polaroid-frame {
-	width: 22em;
-	height: 27em;
-	box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
-	margin: 20px auto;
-	display: flex;
-	justify-content: center;
-	border-radius: 2px;
-}
-
-#box {
-	position: absolute;
-	max-width: 19.80em;
-	max-height: 20.13em;
-	width: 100%;
-	height: 100%;
-	margin-top: 1.55em;
-
-	z-index: -100 !important;
-
-	/* box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.2) !important; */
-}
-
-canvas {
-	/* max-width: 19.54em;
-    max-height: 20.13em; */
-	width: 100%;
-	height: 100%;
-	z-index: 200;
-}
-
-.input-box {
-	width: 22.5em;
-	height: 5em;
-	margin-top: 0.5em;
-	display: flex;
-	justify-self: center;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-}
-
-label {
-	position: relative;
-}
-
-#btn {
-	width: 100px;
-	height: 40px;
-	text-align: center;
-	background-color: rgba(255, 255, 255, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(15px);
-	border-radius: 10px;
-	cursor: pointer;
-	color: #fff;
-	font-size: 14px;
-	box-shadow: 0 0 3px 0.5px rgba(0, 0, 0, 0.1);
-}
-
-#imageUpload {
-	position: absolute;
-	left: 0;
-	top: 0;
-	opacity: 0;
-=======
 } */
 
 #polaroid {
@@ -355,84 +178,10 @@ label {
     left: 0;
     top: 0;
     opacity: 0;
->>>>>>> 2df1fa7 (first commit)
 
 }
 
 input {
-<<<<<<< HEAD
-	width: 100px;
-	height: 40px;
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 0;
-}
-
-#presetSelect {
-	text-align: center;
-	text-align-last:center;
-	width: 100px;
-	height: 40px;
-	font-size: 14px;
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	background-color: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(15px);
-	border-radius: 10px;
-	color: #fff;
-	box-shadow: 0 0 3px 0.5px rgba(0, 0, 0, 0.1);
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-}
-
-option{
-	color: #000;
-	text-align: center;
-	font-size:14px;
-}
-
-.option{
-	text-align: center;
-	position: relative;
-}
-
-
-
-.inputBtn::file-selector-button {
-	width: 100px;
-	height: 40px;
-	text-align: center;
-	background-color: rgba(255, 255, 255, 0.2);
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	border-radius: 10px;
-	cursor: pointer;
-	color: #fff;
-	font-size: 14px;
-}
-
-#downloadBtn {
-	width: 100px;
-	height: 40px;
-	background-color: rgba(255, 255, 255, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(15px);
-	color: #fff;
-	border-radius: 10px;
-	cursor: pointer;
-	font-size: 14px;
-	box-shadow: 0 0 3px 0.5px rgba(0, 0, 0, 0.1);
-}
-
-#downloadBtn:hover {
-	background-color: rgba(255, 255, 255, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(15px);
-	box-shadow: 0 0 3px 0.5px rgba(0, 0, 0, 0.1);
-	-webkit-backdrop-filter: blur(15px);
-}
-=======
     width: 100px;
     height: 40px;
     text-align: center;
@@ -539,4 +288,3 @@ option {
 #footer span {
     margin: 0 10px;
 }
->>>>>>> 2df1fa7 (first commit)
