@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* overflow: hidden; */
+    overflow: hidden;
     font: normal 100% Arial, sans-serif;
 }
 
